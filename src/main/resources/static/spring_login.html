@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Simple Cool Login Page</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dialog.min.css" rel="stylesheet">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <script src="/js/bootstrap-dialog.js"></script>
+
+    <style>
+        .col-center-block {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        html,
+        body,
+        .container {
+            height: 100%;
+            width: 100%;
+            background-color: #1b6d85;
+        }
+
+        .container {
+            display: table;
+            vertical-align: middle;
+        }
+
+        .vertical-center-row {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .login-screen-bg {
+            background-color: #EFEFEF;
+        }
+
+        .panel-git {
+            border: 1px solid #d8dee2;
+        }
+
+        .panel-git h3 {
+            color: #fff;
+        }
+
+        .panel-git .panel-heading {
+            background-color: #829AA8;
+        }
+
+        .login-widget {
+            padding: 50px;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 1px 1px rgba(161, 159, 159, 0.1);
+            background-color: #FFF;
+        }
+    </style>
+</head>
+
+<body class="login-screen-bg">
+<div class="container">
+    <div class="row vertical-center-row">
+        <div class="col-md-4 col-center-block login-widget">
+            <h1 class="text-center"><i class="glyphicon glyphicon-user"></i>&nbsp;登录</h1>
+            <div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+                        <input type="text" id="username" class="form-control" placeholder="admin@dashboard.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>
+                        <input type="password" id="password" class="form-control" placeholder="******">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label for="rememberMe">
+                            <input type="checkbox" id="rememberMe" name="remember-me"><span></span><td>Remember me on this computer.</td></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="loginBtn" class="btn btn-primary btn-block">Login</button>
+                    <hr>
+                    <p class="text-center">Not a registered user yet? <strong><a href="http://jquery2dotnet.com/" class="blue-text">Sign up now!</a></strong></p>
+                </div>
+                <input name="_csrf" type="hidden" value="3f2b30a0-8c4b-4abb-b1bf-2e02981ae8e3" />
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script src="@{login.js}"></script>
+</html>
